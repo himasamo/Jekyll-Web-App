@@ -1,0 +1,209 @@
+/* ==== TEAM SECTION ==== */
+
+.team_wrap
+  max-width: 100%
+  padding: 130px 0px
+
+  .team_headline
+    font-size: 30px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 2px
+    color: #222325
+    margin: 0px
+    padding-bottom: 80px
+    text-align: center
+
+  .team_content
+    max-width: 695px
+    margin: 0px auto
+
+    .team_thumb
+      display: flex
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
+      justify-content: space-between
+      -webkit-justify-content: space-between
+      -ms-justify-content: space-between
+
+      .team_memb
+        max-width: 150px
+        display: block
+        text-align: center
+        opacity: 0
+
+        &.memb_fade
+          animation: memb 500ms ease-in forwards
+
+        @keyframes memb
+          0%
+            opacity: 0
+            transform: scale(.5, .5) rotateY(90deg)
+          60%
+            transform: scale(1.2, 1.2)
+
+          90%
+            transform: scale(.9, .9)
+          100%
+            opacity: 1
+
+        .unit_team
+          &:hover .memb_img
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+          &:hover .memb_img ~ .thumb_social
+            display: block
+          &:hover .memb_img + .info
+            display: none
+
+          .memb_img
+            width: 150px
+            padding-top: 230px
+            border-radius: 2px
+            background: gray
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: 50%
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+            cursor: pointer
+
+          .info
+            padding: 20px 0px 0px 0px
+            display: block
+
+            .memb_name
+              font-size: 15px
+              font-weight: 400
+              text-transform: capitalize
+              color: #222325
+              letter-spacing: 1.6px
+              padding: 0px
+              margin: 0px
+
+            .memb_feild
+              font-size: 14px
+              font-weight: 300
+              text-transform: uppercase
+              color: #55585d
+              letter-spacing: 1.4px
+              line-height: 2
+
+          .thumb_social
+            display: none
+
+            .memb_social
+              display: flex
+              justify-content: center
+              padding: 20px 10px
+
+              .social
+                width: 24px
+                height: 24px
+                padding-right: 10px
+                svg
+                  cursor: pointer
+                  fill: #FE7A7F
+                  transition: transform 0.3s ease-in-out
+                  &:hover
+                    transform: scale(1.5)
+
+
+    .sales_rateing
+      width: 200px
+      padding-top: 80px
+
+      .sub_line
+        font-size: 22px
+        font-weight: 500
+        text-transform: uppercase
+        color: #222325
+        letter-spacing: 2px
+
+      .year_rate
+        p
+          font-size: 20px
+          font-weight: 400
+          text-transform: uppercase
+          color: #222325
+          margin: 0px
+          letter-spacing: 2px
+          span
+            padding-left: 101px
+            font-size: 19px
+            font-weight: 300
+            text-transform: uppercase
+            color: #55585d
+            margin: 0px
+            letter-spacing: 2px
+
+
+/* ==== TEAM MEDIA QUERY ==== */
+/* ==== SCREEN: SMARTPHONE, IPHONE ==== */
+@media screen and (min-width: 320px) and (max-width: 586px) and (orientation: portrait)
+  .team_wrap
+    .team_content
+      display: block
+      margin: 0px auto
+      max-width: 200px
+      text-align: center
+
+      .team_thumb
+        display: block
+        text-align: center
+
+        .team_memb
+          padding-bottom: 40px
+          margin: 0px auto
+
+/* ==== LANDSCAPE  SCREEN: SMARTPHONE, IPHONE ==== */
+@media screen and (min-width: 320px) and (max-width: 586px) and (orientation: landscape)
+  .team_wrap
+    .team_content
+      display: block
+      margin: 0px auto
+      max-width: 200px
+      text-align: center
+
+      .team_thumb
+        display: block
+        text-align: center
+
+        .team_memb
+          padding-bottom: 40px
+          margin: 0px auto
+
+/* ==== SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 586px) and (max-width: 786px) and (orientation: portrait)
+  .team_wrap
+    .team_content
+      display: block
+      margin: 0px auto
+      max-width: 200px
+      text-align: center
+
+      .team_thumb
+        display: block
+        text-align: center
+
+        .team_memb
+          padding-bottom: 40px
+          margin: 0px auto
+
+/* ==== LANDSCAPE SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 586px) and (max-width: 786px) and (orientation: landscape)
+  .team_wrap
+    .team_content
+      display: block
+      margin: 0px auto
+      max-width: 200px
+      text-align: center
+
+      .team_thumb
+        display: block
+        text-align: center
+
+        .team_memb
+          padding-bottom: 40px
+          margin: 0px auto

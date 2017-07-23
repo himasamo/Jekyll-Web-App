@@ -1,0 +1,201 @@
+/* ==== CONTACT SECTION ==== */
+
+.contact_wrap
+  .contact_thumb
+    max-width: 100%
+    display: flex
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    flex-wrap: wrap
+    -webkit-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+
+    .left_thumb
+      width: 50%
+      background:
+        image: linear-gradient(rgba(34, 35, 37, 0.7), rgba(34, 35, 37, 0.7)), url('../img/bgs/contact.jpg')
+        repeat: no-repeat
+        size: cover
+        position: center center
+        attachment: fixed
+      flex-grow: 1
+      flex-shrink: 1
+      flex-basis: 0
+      display: flex
+      justify-content: center
+      align-items: center
+
+      .contact_decs
+        padding: 130px 0px
+        max-width: 363px
+
+        .contact_headline
+          font-size: 30px
+          font-weight: 500
+          text-transform: uppercase
+          letter-spacing: 2px
+          color: white
+          margin: 0px
+          padding-bottom: 40px
+
+        .contact_text
+          font-size: 18px
+          font-weight: 400
+          color: white
+          margin: 0px
+          letter-spacing: 1px
+          padding-bottom: 20px
+          line-height: 1.618em
+
+    .right_thumb
+      width: 50%
+      flex-grow: 1
+      flex-shrink: 1
+      flex-basis: 0
+      display: flex
+      justify-content: center
+      align-items: center
+
+      .form
+        max-width: 410px
+        padding: 130px 0px
+        text-align: center
+
+        .contact_form
+          input, textarea
+            width: 100%
+            padding: 10px 15px
+            margin: 15px 0
+            box-sizing: border-box
+            display: inline-block
+            font-size: 20px
+            color: #222325
+            resize: none
+            border: none
+            background: none
+            outline: none
+            border-bottom: 1px solid #222325
+            &:hover::-webkit-input-placeholder
+              color: #55585d
+            &:hover::-moz-placeholde
+              color: #55585d
+            &:hover::-ms-input-placeholder
+              color: #55585d
+            &:hover::-moz-placeholder
+              color: #55585d
+            &:hover,
+            &:focus
+              border-bottom: 1px solid #FE7A7F
+
+          button
+            display: inline-block
+            text-decoration: none
+            padding: 0px 36px
+            line-height: 36px
+            margin: 20px 0 0 0
+            font-size: 13px
+            letter-spacing: .1rem
+            white-space: nowrap
+            text-align: center
+            text-transform: uppercase
+            border: none
+            border: 1px solid  #222325
+            background: none
+            border-radius: 25px
+            color:  #222325
+            outline: none
+            transition: all 200ms ease-in-out
+            &:hover
+              border: 1px solid  #FE7A7F
+              color:  #FE7A7F
+
+/* ==== CONTACT MEDIA QUERY ==== */
+/* ==== SCREEN: SMARTPHONE, IPHONE ==== */
+@media screen and (min-width: 320px) and (max-width: 586px) and (orientation: portrait)
+  .contact_wrap
+    .contact_thumb
+      display: block
+      max-width: 100%
+      text-align: center
+      .left_thumb
+        width: 100%
+        .contact_decs
+          margin: 0px
+          padding: 100px 10px
+          max-width: 100%
+      .right_thumb
+        width: 100%
+        .form
+          max-width: 310px
+
+/* ==== LANDSCAPE  SCREEN: SMARTPHONE, IPHONE ==== */
+@media screen and (min-width: 320px) and (max-width: 586px) and (orientation: landscape)
+  .contact_wrap
+    .contact_thumb
+      display: block
+      max-width: 100%
+      text-align: center
+      .left_thumb
+        width: 100%
+        text-align: center
+        .contact_decs
+          margin: 0px
+          padding: 130px 10px
+          max-width: 100%
+      .right_thumb
+        width: 100%
+        .form
+          max-width: 310px
+
+/* ==== SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 586px) and (max-width: 786px) and (orientation: portrait)
+  .contact_wrap
+    .contact_thumb
+      display: block
+      max-width: 100%
+      text-align: center
+      .left_thumb
+        width: 100%
+        text-align: center
+        .contact_decs
+          margin: 0px
+          padding: 130px 10px
+          max-width: 100%
+      .right_thumb
+        width: 100%
+
+/* ==== LANDSCAPE SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 586px) and (max-width: 786px) and (orientation: landscape)
+  .contact_wrap
+    .contact_thumb
+      display: block
+      max-width: 100%
+      text-align: center
+      .left_thumb
+        width: 100%
+        text-align: center
+        .contact_decs
+          margin: 0px
+          padding: 130px 10px
+          max-width: 100%
+      .right_thumb
+        width: 100%
+
+/* ==== LANDSCAPE SCREEN: TABLETS, LAPTOP, BIG LANDSCAPE SCREEN ==== */
+@media only screen and (min-width: 787px) and (max-width: 960px) and (orientation: landscape)
+  .contact_wrap
+    .contact_thumb
+      display: block
+      max-width: 100%
+      text-align: center
+      .left_thumb
+        width: 100%
+        text-align: center
+        .contact_decs
+          margin: 0px
+          padding: 130px 10px
+          max-width: 100%
+      .right_thumb
+        width: 100%

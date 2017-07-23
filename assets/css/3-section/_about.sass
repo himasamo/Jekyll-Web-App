@@ -1,0 +1,254 @@
+/* ==== ABOUT SECTION ==== */
+
+.about_wrap
+  padding: 130px 0px
+  
+  .about_thumb
+    max-width: 780px
+    margin: 0px auto
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    justify-content: space-between
+    -webkit-justify-content: space-between
+
+    .about_desc
+      max-width: 363px
+      position: relative
+
+      .about_headline
+        font-size: 30px
+        font-weight: 500
+        text-transform: uppercase
+        letter-spacing: 2px
+        color: #222325
+        margin: 0px
+        padding-bottom: 40px
+
+      .about_text
+        font-size: 18px
+        line-height: 1.618em
+        font-weight: 400
+        color: #55585d
+        margin: 0px
+        letter-spacing: 1px
+        padding-bottom: 30px
+
+      .cta
+        margin: 0
+        display: block
+        a
+          font-size: 15px
+          text-transform: uppercase
+          font-weight: 500
+          color: #222325
+          letter-spacing: 2px
+          transition: all 200ms ease-in-out
+          &:hover
+            color: #FE7A7F
+          span
+            font-size: 18px
+            font-weight: 500
+
+    .right_about
+      width: 200px
+      position: relative
+      display: block
+      text-align: center
+
+      .img_a
+        width: 150px
+        height: 150px
+        background: gray
+        position: relative
+        background:
+          image: url('../img/about/img-a.jpg')
+          size: cover
+          repeat: no-repeat
+          position: 50%
+
+      .img_b
+        width: 150px
+        height: 150px
+        background: gray
+        position: absolute
+        left: 50px
+        bottom: 70px
+        background:
+          image: url('../img/about/img-b.jpg')
+          size: cover
+          repeat: no-repeat
+          position: 50%
+
+/* ==== ABOUT MEDIA QUERY ==== */
+/* ==== SCREEN: SMARTPHONE, IPHONE ==== */
+@media only screen and (min-width: 320px) and (max-width: 586px) and (orientation: portrait)
+  .about_wrap
+    padding: 120px 10px
+
+    .about_thumb
+      max-width: 100%
+      display: block
+      text-align: center
+
+
+      .about_desc
+        max-width: 100%
+        padding-bottom: 90px
+
+        .about_text
+          padding-bottom: 40px
+          line-height: 1.9
+
+        .cta
+          a
+            span
+              margin-left: 3px
+
+      .right_about
+        display: block
+        margin: 0px auto
+        padding-bottom: 50px
+        position: relative
+        height: 200px
+
+        .img_b
+          position: absolute
+          left: 50px
+          top: 100px
+
+/* ==== LANDSCAPE  SCREEN: SMARTPHONE, IPHONE ==== */
+@media only screen and (min-width: 320px) and (max-width: 586px) and (orientation: landscape)
+  .about_wrap
+    padding: 120px 10px
+
+    .about_thumb
+      max-width: 100%
+      display: block
+      text-align: center
+
+      .about_desc
+        max-width: 100%
+        padding-bottom: 80px
+
+        .about_text
+          padding-bottom: 40px
+
+        .cta
+          a
+            span
+              margin-left: 3px
+
+      .right_about
+        display: block
+        margin: 0px auto
+        padding-bottom: 50px
+        position: relative
+        height: 200px
+
+        .img_b
+          position: absolute
+          left: 50px
+          top: 100px
+
+/* ==== SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 586px) and (max-width: 786px) and (orientation: portrait)
+  .about_wrap
+    padding: 120px 10px
+
+    .about_thumb
+      max-width: 100%
+      display: block
+      text-align: center
+
+      .about_desc
+        max-width: 100%
+        padding-bottom: 80px
+
+        .about_text
+          padding-bottom: 40px
+
+        .cta
+          a
+            span
+              margin-left: 3px
+
+      .right_about
+        display: block
+        margin: 0px auto
+        padding-bottom: 50px
+        position: relative
+        height: 200px
+
+        .img_b
+          position: absolute
+          left: 50px
+          top: 100px
+
+/* ==== LANDSCAPE SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 586px) and (max-width: 786px) and (orientation: landscape)
+  .about_wrap
+    padding: 120px 10px
+
+    .about_thumb
+      max-width: 100%
+      display: block
+      text-align: center
+
+      .about_desc
+        max-width: 100%
+        padding-bottom: 80px
+
+        .about_text
+          padding-bottom: 40px
+        .cta
+          a
+            span
+              margin-left: 3px
+
+      .right_about
+        display: block
+        margin: 0px auto
+        padding-bottom: 50px
+        position: relative
+        height: 200px
+
+        .img_b
+          position: absolute
+          left: 50px
+          top: 100px
+
+/* ==== LANDSCAPE SCREEN: TABLETS,  IPAD, LANDSCAPE, LAPTOP ==== */
+@media only screen and (min-width: 786px) and (max-width: 961px) and (orientation: landscape)
+  .about_wrap
+    padding: 120px 10px
+
+    .about_thumb
+      max-width: 100%
+      display: block
+      text-align: center
+
+      .about_desc
+        max-width: 100%
+        padding-bottom: 80px
+
+        .about_text
+          padding-bottom: 40px
+
+        .cta
+          a
+            span
+              margin-left: 3px
+
+      .right_about
+        display: block
+        margin: 0px auto
+        padding-bottom: 50px
+        position: relative
+        height: 200px
+
+        .img_b
+          position: absolute
+          left: 50px
+          top: 100px

@@ -1,0 +1,18 @@
+#--- project thumb ---#
+proj-1:
+- {name: photogrphy , folder: 'proj-1'}
+- {name: design nornaml, folder: 'proj-2'}
+- {name: typography, folder: 'proj-3'}
+- {name: modern, folder: 'proj-4'}
+
+proj-2:
+- {name: interior design, folder: 'proj-5'}
+- {name: svg , folder: 'proj-6'}
+- {name: interior design, folder: 'proj-7'}
+- {name: interior design, folder: 'proj-8'}
+
+proj-3:
+- {name: photogrphy, folder: 'proj-9'}
+- {name: photogrphy design, folder: 'proj-10'}
+- {name: tools tasks, folder: 'proj-11'}
+- {name: books story, folder: 'proj-12'}

@@ -1,0 +1,334 @@
+/* === Header Section === */
+
+.wrap-header
+  background:
+    image: linear-gradient(rgba(34, 35, 37, 0.7), rgba(34, 35, 37, 0.7)), url('../img/bgs/header-bg.jpg')
+    repeat: no-repeat
+    size: cover
+    attachment: fixed
+  max-width: 100%
+
+  .logo
+    text-align: center
+    padding:  70px 0
+
+    svg
+      width: 30px
+      height: 30px
+      fill: white
+
+  .thumb-header
+    background: #fafafa
+    max-width: 800px
+    margin: 0px auto
+    border-top-right-radius: 2px
+    border-top-left-radius: 2px
+
+    .menu_header
+      .header_menu
+        list-style-type: none
+        line-height: 0
+        padding: 25px 20px 0 0
+        margin: 0px
+        float: right
+
+        .li_header
+          display: inline-block
+
+          .link_header
+            font-size: 14px
+            text-transform: capitalize
+            font-weight: 500
+            color: #222325
+            margin-left: 10px
+            letter-spacing: 1.6px
+            transition: all 200ms ease-in-out
+            &:hover
+              color: #FE7A7F
+
+        .li_header.ctv .link_header
+          color: #FE7A7F
+
+      .menu
+        display: none
+        cursor: pointer
+        width: 30px
+
+      .bar-1, .bar-2, .bar-3
+        height: 3px
+        background-color: #222325
+        margin: 5px 0
+        transition: .4s
+
+      .change .bar-1
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+        transform: rotate(-45deg) translate(-9px, 4px)
+
+      .change .bar-2
+        opacity: 0
+
+      .change .bar-3
+        -webkit-transform: rotate(45deg) translate(-8px, -8px)
+        transform: rotate(45deg) translate(-7px, -3px)
+
+    .head-line
+      clear: both
+      display: block
+      text-align: center
+      padding: 150px 0px
+
+      .first
+        font-size: 16px
+        text-transform: capitalize
+        color: #55585d
+        font-weight: 400
+        letter-spacing: 1px
+        margin: 0
+        line-height: 1.8
+
+      .header_title
+        font-size: 36px
+        text-transform: uppercase
+        color: #222325
+        font-weight: 600
+        letter-spacing: 1px
+        margin: 0px
+        line-height: 1
+
+      .secound
+        font-size: 16px
+        text-transform: capitalize
+        color: #55585d
+        font-weight: 400
+        margin: 0
+
+    .cta
+      text-align: center
+      padding-bottom: 40px
+      line-height: 0
+      margin: 0
+      display: block
+
+      a
+        font-size: 15px
+        text-transform: uppercase
+        font-weight: 500
+        color: #222325
+        letter-spacing: 2px
+        &:hover
+          color: #FE7A7F
+        span
+          font-size: 18px
+          font-weight: 500
+
+/* ==== HEADER MEDIA QUERY ==== */
+/*  ==== SCREEN: SMARTPHONE, IPHONE ==== */
+@media only screen and (min-width: 320px) and (max-width: 586px) and (orientation: portrait)
+  .wrap-header
+    max-width: 100%
+    .thumb-header
+      background: #fafafa
+      max-width: 300px
+
+      .menu_header
+        .header_menu
+          display: none
+          float: none
+          clear: both
+          line-height: 1
+          text-align: center
+          width: 200px
+          padding: 0px
+          margin: 0px auto
+          .li_header
+            display: block
+            padding-bottom: 10px
+            .link_header
+              font:
+                size: 15px
+        .menu
+          display: inline-block
+          float: right
+          padding: 20px  20px 0px 20px
+
+      .head-line
+        text-align: center
+        padding: 100px 0px
+        .header_title
+          font:
+            size: 30px
+        .cta
+          a
+            font-size: 17px
+            span
+              font-size: 22px
+              margin-left: 3px
+
+/* ==== LANDSCAPE  SCREEN: SMARTPHONE, IPHONE ==== */
+@media only screen and (min-width: 320px) and (max-width: 586px) and (orientation: landscape)
+  .wrap-header
+    max-width: 100%
+    .thumb-header
+      background: #fafafa
+      max-width: 300px
+      .menu_header
+        .header_menu
+          display: none
+          float: none
+          clear: both
+          line-height: 1
+          text-align: center
+          width: 350px
+          margin: 0px auto
+          .li_header
+            display: block
+            padding-bottom: 10px
+            .link_header
+              font:
+                size: 15px
+        .menu
+          display: inline-block
+          float: right
+          padding: 20px 20px 0px 20px
+      .head-line
+        text-align: center
+        padding: 100px 0px
+        .cta
+          a
+            font-size: 17px
+            span
+              font-size: 22px
+              margin-left: 3px
+
+/* ==== LANDSCAPE  SCREEN: SMARTPHONE, IPHONE ==== */
+@media only screen and (min-width: 586px) and (max-width: 640px) and (orientation: landscape)
+  .wrap-header
+    max-width: 100%
+    .thumb-header
+      background: #fafafa
+      max-width: 500px
+      .menu_header
+        .header_menu
+          display: none
+          float: none
+          clear: both
+          line-height: 1
+          text-align: center
+          width: 350px
+          margin: 0px auto
+          .li_header
+            display: block
+            padding-bottom: 10px
+            .link_header
+              font:
+                size: 15px
+        .menu
+          display: inline-block
+          float: right
+          padding: 20px 20px 0px 20px
+      .head-line
+        text-align: center
+        padding: 100px 0px
+        .cta
+          a
+            font-size: 17px
+            span
+              font-size: 22px
+              margin-left: 3px
+
+/* ==== SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 640px) and (max-width: 786px) and (orientation: portrait)
+  .wrap-header
+    max-width: 100%
+    .thumb-header
+      background: #fafafa
+      max-width: 600px
+      .menu_header
+        .header_menu
+          display: none
+          float: none
+          clear: both
+          line-height: 1
+          text-align: center
+          width: 200px
+          padding: 0px
+          margin: 0px auto
+          .li_header
+            display: block
+            padding-bottom: 10px
+            .link_header
+              font:
+                size: 15px
+        .menu
+          display: inline-block
+          float: right
+          padding: 20px 20px 0px 20px
+      .head-line
+        text-align: center
+        padding: 100px 0px
+        .header_title
+          letter-spacing: 1.2px
+        .cta
+          a
+            font-size: 17px
+            span
+              font-size: 22px
+              margin-left: 3px
+
+/* ==== LANDSCAPE SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 640px) and (max-width: 786px) and (orientation: landscape)
+  .wrap-header
+    max-width: 100%
+    .thumb-header
+      background: #fafafa
+      max-width: 600px
+      .menu_header
+        .header_menu
+          display: none
+          float: none
+          clear: both
+          line-height: 1
+          text-align: center
+          width: 200px
+          padding: 0px
+          margin: 0px auto
+          .li_header
+            display: block
+            padding-bottom: 10px
+            .link_header
+              font:
+                size: 15px
+        .menu
+          display: inline-block
+          float: right
+          padding: 20px 20px 0px 20px
+      .head-line
+        text-align: center
+        padding: 100px 0px
+        .header_title
+          letter-spacing: 1.2px
+        .cta
+          a
+            font-size: 17px
+            span
+              font-size: 22px
+              margin-left: 3px
+
+/* ==== LANDSCAPE SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media only screen and (min-width: 786px) and (max-width: 900px) and (orientation: landscape)
+  .wrap-header
+    max-width: 100%
+    .thumb-header
+      background: #fafafa
+      max-width: 730px
+      .head-line
+        text-align: center
+        padding: 150px 0px
+        .header_title
+          letter-spacing: 1.2px
+        .cta
+          a
+            font-size: 17px
+            span
+              font-size: 22px
+              margin-left: 3px

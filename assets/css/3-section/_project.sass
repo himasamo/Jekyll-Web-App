@@ -1,0 +1,325 @@
+/* ==== PROJECT SCTION ==== */
+
+.project_wrap
+  background: #fafafa
+  padding: 130px 0px
+  overflow-x: hidden
+
+  .proj_headline
+    font-size: 30px
+    font-weight: 500
+    text-transform: uppercase
+    color: #222325
+    text-align: center
+    display: block
+    letter-spacing: 2px
+    margin: 0px
+
+  .nav
+    list-style-type: none
+    text-align: center
+    padding-top: 80px
+    padding-left: 0px
+    display: block
+    position: relative
+    left: 0%
+    margin: 0px
+
+    .li_nav
+      display: inline-block
+      margin-left: 25px
+
+      .link_nav
+        font-size: 18px
+        font-weight: 400
+        text-transform: capitalize
+        color: #222325
+        letter-spacing: 2px
+        white-space: nowrap
+        transition: all 200ms ease-in-out
+        &:hover
+          color: #FE7A7F
+    .active .link_nav
+      color: #FE7A7F
+
+  .container_proj
+    padding: 80px 0
+    position: relative
+    left: 0%
+    width: 200%
+    transition: all 800ms ease-in-out
+
+    .clear
+      clear: both
+
+    .proj_wrap, .work_wrap
+      width: 50%
+      float: left
+
+      .thumb_project
+        display: -ms-flex
+        display: -webkit-flex
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-flow: row  wrap
+        align-content: center
+        -webkit-align-content: center
+        -webkit-flex-flow: row wrap
+        max-width: 940px
+        margin: 0 auto
+
+        .thumb_unit
+          height: 100px
+          flex: 0 0 200px
+          background:
+            size: cover
+            position: center center
+            repeat: no-repeat
+          position: relative
+          margin: 2px
+          perspective: 300px
+          opacity: 0
+
+          &.visible
+            animation: own 500ms ease-in forwards
+          @keyframes own
+            0%
+              opacity: 0
+              transform: scale(.5, .5) rotateY(90deg)
+            60%
+              transform: scale(1.2, 1.2)
+            90%
+              transform: scale(.9, .9)
+            100%
+              opacity: 1
+
+          .overlay
+            height: 100%
+            background: fade-out(#FE7A7F, 0.20)
+            opacity: 0
+            transition: opacity 300ms ease-in
+            position: absolute
+            top: 0px
+            right: 0px
+            bottom: null
+            left: 0px
+            text-align: center
+            display: flex
+            justify-content: space-around
+            align-items: center
+            cursor: pointer
+
+            .title
+              font:
+                size: 14px
+                weight: 500
+              text-transform: uppercase
+              color: white
+              text-align: center
+              letter-spacing: 2px
+              display: block
+              margin: 35px auto
+              width: 120px
+
+
+          &:hover
+            z-index: 1
+            .overlay
+              animation: overlay 200ms ease-in forwards
+              @keyframes overlay
+                0%
+                  transform: scale(.5, .5) skew(30deg, 30deg)
+                60%
+                  transform: scale(.9, .9) skew(20deg, 20deg)
+                90%
+                  transform: scale(1.1, 1.1) skew(10deg, 10deg)
+                100%
+                  transform: scale(1, 1) skew(0deg, 0deg)
+                  opacity: 1
+
+  .cta
+    text-align: center
+    margin: 0
+    display: block
+    position: relative
+    left: 0%
+    a
+      font-size: 15px
+      text-transform: uppercase
+      font-weight: 500
+      letter-spacing: 2px
+      color: #222325
+      transition: all 200ms ease-in-out
+      &:hover
+        color: #FE7A7F
+      span
+        font-size: 18px
+        font-weight: 500
+
+.work
+  max-width: 600px
+  margin: 0px auto
+  clear: both
+  display: none
+  position: relative
+
+  .return
+    width: 40px
+    height: 40px
+    opacity: 0.5
+    display: block
+    position: absolute
+    top: -4
+    right: null
+    bottom: null
+    left: -60px
+    &:hover
+      opacity: 1
+    svg
+      cursor: pointer
+      width: 40px
+      height: 40px
+      fill: #222325
+      &:hover
+        fill: #55585d
+
+  h4
+    font:
+      size: 22px
+      weight: 500
+    color: #222325
+    text-transform: uppercase
+    margin-bottom: 10px
+    letter-spacing: 2px
+    padding-bottom: 30px
+
+
+  img
+    width: 100%
+    margin-bottom: 20px
+    background:
+      size: cover
+      position: center center
+      repeat: no-repeat
+
+.text
+  padding: 0 0 30px 0px
+  font-size: 18px
+  line-height: 1.5em
+  font-weight: 400
+  color: #55585d
+  margin: 0px
+  letter-spacing: 1px
+
+/* ==== PROJECT MEDIA QUERY ==== */
+/* ==== SCREEN: SMARTPHONE, IPHONE ==== */
+@media screen and (min-width: 320px) and (max-width: 586px) and (orientation: portrait)
+  .project_wrap
+    .nav
+      display: block
+      width: 40%
+      text-align: center
+      margin: 0px auto
+      padding: 0px
+      padding-top: 80px
+
+      .li_nav
+        display: block
+        margin: 0px auto
+        margin-bottom: 25px
+
+    .work_wrap
+      .work
+        padding: 0px 20px
+        .return
+          display: block
+          position: absolute
+          top: -70px
+          right: null
+          bottom: null
+          left: 10px
+
+/* ==== LANDSCAPE  SCREEN: SMARTPHONE, IPHONE ==== */
+@media screen and (min-width: 320px) and (max-width: 586px) and (orientation: landscape)
+  .project_wrap
+
+    .nav
+      display: block
+      width: 40%
+      text-align: center
+      margin: 0px auto
+      padding: 0px
+      padding-top: 80px
+
+      .li_nav
+        display: block
+        margin: 0px auto
+        margin-bottom: 25px
+
+    .work_wrap
+      .work
+        padding: 0px 20px
+
+        .return
+          display: block
+          position: absolute
+          top: -70px
+          right: null
+          bottom: null
+          left: 10px
+
+/* ==== SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media screen and (min-width: 586px) and (max-width: 786px) and (orientation: portrait)
+  .project_wrap
+
+    .nav
+      display: block
+      width: 40%
+      text-align: center
+      margin: 0px auto
+      padding: 0px
+      padding-top: 80px
+
+      .li_nav
+        display: block
+        margin: 0px auto
+        margin-bottom: 25px
+
+    .work_wrap
+      .work
+        .return
+          display: block
+          position: absolute
+          top: -70px
+          right: null
+          bottom: null
+          left: 5px
+
+/* ==== LANDSCAPE SCREEN: TABLETS,  IPAD, E_RENDER ==== */
+@media screen and (min-width: 586px) and (max-width: 786px) and (orientation: landscape)
+  .project_wrap
+    .nav
+      display: block
+      width: 40%
+      text-align: center
+      margin: 0px auto
+      padding: 0px
+      padding-top: 80px
+
+      .li_nav
+        display: block
+        margin: 0px auto
+        margin-bottom: 25px
+
+    .work_wrap
+      .work
+        padding: 0px 20px
+
+        .return
+          display: block
+          position: absolute
+          top: -70px
+          right: null
+          bottom: null
+          left: 10px

@@ -1,0 +1,56 @@
+<!-- BEGIN PROJECT -->
+<section class="project_wrap">
+   <h2 class="proj_headline" id="project">our project</h2>
+   <ul class="nav">
+     <li class="li_nav active"><a class="link_nav" id="all" href="#/">all</a></li>
+     <li class="li_nav"><a class="link_nav" id="man_war" href="#/">Section-A</a></li>
+     <li class="li_nav"><a class="link_nav" id="woman_war" href="#/">Section-B</a></li>
+     <li class="li_nav"><a class="link_nav" id="accessory" href="#/">Section-C</a></li>
+   </ul>
+     <div class="container_proj">
+     <div class="proj_wrap">
+     <div class="thumb_project">
+      {% for project in site.data.settings.projects %}
+         <div class="thumb_unit all" data-folder="{{ project.folder }}" style="background-image: url(./assets/img/work/{{project.folder}}/thumb.jpg)">
+           <div class="overlay">
+              <p class="title">{{ project.name }}</p>
+            </div>
+           </div>
+       {% endfor %}
+       {% for project in site.data.settings.proj-1 %}
+          <div class="thumb_unit man_war" data-folder="{{ project.folder }}" style="background-image: url(./assets/img/work/{{project.folder}}/thumb.jpg)">
+            <div class="overlay">
+               <p class="title">{{ project.name }}</p>
+             </div>
+           </div>
+        {% endfor %}
+        {% for project in site.data.settings.proj-2 %}
+           <div class="thumb_unit woman_war" data-folder="{{ project.folder }}" style="background-image: url(./assets/img/work/{{project.folder}}/thumb.jpg)">
+             <div class="overlay">
+                <p class="title">{{ project.name }}</p>
+              </div>
+           </div>
+         {% endfor %}
+         {% for project in site.data.settings.proj-3 %}
+          <div class="thumb_unit accessory" data-folder="{{ project.folder }}" style="background-image: url(./assets/img/work/{{project.folder}}/thumb.jpg)">
+              <div class="overlay">
+                 <p class="title">{{ project.name }}</p>
+               </div>
+            </div>
+          {% endfor %}
+   </div>
+   </div>
+    <div class="work_wrap">
+      <div class="work">
+       <div class="return">{% include icons/arrow.html %}</div>
+       <h4 class="work-title">photogrphy</h4>
+       <div class="projrct-load"></div>
+     </div>
+   </div>
+<div class="clear"></div>
+</div>
+   <div class="cta">
+     <a href="#"> get more <span>&#8594;</span></a>
+   </div>
+</section><!-- end section .project_wrap -->
+<!-- END PROJECT -->
